@@ -24,7 +24,7 @@
 
 html {
     font-size: 10px;
-
+    font-family: var(--primary-font)
 }
 
 body {
@@ -36,10 +36,51 @@ body {
 
 ::selection {
     color: var(--white-color);
-    background: var(--blue-color)
+    background: var(--purple-color);
 }
 
 .task-input img {
     width: 38px;
     height: 38px;
+}
+
+.wrapper {
+    max-width: 50rem;
+    padding: 2.8rem 0 3rem;
+    margin: 13rem auto;
+    align-content: center;
+    background-color: var(--white-color);
+    border-radius: 0.7rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.task-input {
+    height: 5.2rem;
+    padding: 0 2.5rem;
+    position: relative;
+}
+
+/* .task-input img {
+    top: 50%;
+    position: absolute;
+    transform: translate(1.7rem, -50%);
+} */
+li ul {
+    list-style: none;
+}
+
+.task-input input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 1.8rem;
+    border-radius: 0.5rem;
+    padding: 0 2rem 0 5.3rem;
+    border: 0.1rem solid var(--light-gray-2);
+}
+
+.task-input input:focus,
+.task-input input.active {
+    padding-left: 5.2rem;
+    border: 0.2remsolid var(--blue-color);
 }
