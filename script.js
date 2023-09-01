@@ -11,7 +11,6 @@ filterOptionEl.addEventListener('click', filterTodo)
 //functions
 function addTodo(event) {
     event.preventDefault();
-
     // Todo List
     const todoDiv = document.createElement('div'); // created a div
     todoDiv.classList.add('todo'); // now give class todod to that div
@@ -76,5 +75,4 @@ function filterTodo(e) {
                 break;
         }
     });
-
 }
